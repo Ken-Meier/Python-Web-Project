@@ -58,3 +58,5 @@ http://127.0.0.1:5000
 ## 🔮 Future Improvements
 
 - Rework broken comments
+
+- Fix ba2.db because it doesnt have anything
