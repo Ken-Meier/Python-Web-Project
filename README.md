@@ -16,27 +16,6 @@ A lightweight blogging platform built with [Flask](https://flask.palletsprojects
 
 ---
 
-## 🗂️ Folder Structure
-Python-Web-Project/
-├── static/
-│ ├── like.png
-│ ├── like1.png
-│ ├── style.css
-│ └── style1.css
-├── templates/
-│ ├── add_post.html
-│ ├── blog.html
-│ ├── comments.html
-│ ├── edit_post.html
-│ ├── login.html
-│ ├── post.html
-│ └── register.html
-├── ba2.db
-├── flask_app.py
-└── README.md
-
----
-
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
