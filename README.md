@@ -4,12 +4,6 @@ A lightweight blogging platform built with [Flask](https://flask.palletsprojects
 
 ---
 
-## 📸 Screenshots
-
-![Blog Screenshot](static/like.png) <!-- Replace with actual UI screenshots if you have them -->
-
----
-
 ## ⚙️ Features
 
 - 🔐 User authentication (register & login)
@@ -72,13 +66,13 @@ Go to your browser and open:
 http://127.0.0.1:5000
 ```
 
-***🧰 Built With***
+## 🧰 Built With
 
-Flask — Python web framework
+- Flask — Python web framework
 
-SQLite — Embedded relational database
+- SQLite — Embedded relational database
 
-Jinja2 — Templating engine
+- Jinja2 — Templating engine
 
-HTML5, CSS3 — Frontend styling
+- HTML5, CSS3 — Frontend styling
 
