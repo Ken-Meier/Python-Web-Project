@@ -31,7 +31,7 @@ A lightweight blogging platform built with [Flask](https://flask.palletsprojects
 git clone https://github.com/Ken-Meier/Python-Web-Project.git
 cd Python-Web-Projec
 ```
-2. **Install all depencies from requirements.txt**
+2. **Install all dependencies from requirements.txt**
 ```
 pip install -r requirements.txt
 ```
