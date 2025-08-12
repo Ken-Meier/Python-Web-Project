@@ -31,9 +31,9 @@ A lightweight blogging platform built with [Flask](https://flask.palletsprojects
 git clone https://github.com/Ken-Meier/Python-Web-Project.git
 cd Python-Web-Projec
 ```
-2. **Install Flask**
+2. **Install all depencies from requirements.txt**
 ```
-pip install flask
+pip install -r requirements.txt
 ```
 3. **Run the Flask app**
 ```
