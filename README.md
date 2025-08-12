@@ -11,7 +11,7 @@ A lightweight blogging platform built with [Flask](https://flask.palletsprojects
 - 💬 Comment on posts
 - 👍 Like functionality (visual feedback via icons)
 - 🎨 Styled with custom CSS
-- 🗃️ SQLite database (`ba2.db`) for persistent storage(broken)
+- 🗃️ SQLite database (`ba2.db`) for persistent storage (broken)
 - 🧩 Modular template structure using Jinja2
 
 ---
