@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #B2C9AD;
+    color: #4B5945;
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #4B5945;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #66785F;
+}
+
+img {
+    margin: 20px;
+}
+
+.post {
+    max-width: 800px;
+    margin: auto;
+}
+
+label {
+    font-size: 18px;
+}
+
+button {
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4B5945;
+    color: white;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.btn.danger {
+    background-color: #d9534f;
+}
+
+
+
+p {
+    font-family: 'Bold', sans-serif;
+    color: #4B5945;
+    margin-top: 0;
+    font-size: 17px;
+}

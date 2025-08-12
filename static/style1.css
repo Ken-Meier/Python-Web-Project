@@ -1,0 +1,53 @@
+
+button{
+    text-align: right;
+    margin-right: 50px;
+}
+.btn{
+    color: 91AC8F;
+    text-decoration: none;
+    margin-right: 15px;
+}
+body {
+   font-family: 'Bold', sans-serif;
+   background-color: #B2C9AD;
+   color: #333;
+   line-height: 1.6;
+}
+
+
+.blog{
+   margin: auto;
+   max-width: 800px;
+}
+
+
+h1 {
+   font-size: 50px;
+   font-weight: bold;
+   margin: 0;
+   color: #4B5945;
+   text-align: center;
+}
+
+
+.card {
+   border: none;
+   padding: 20px;
+   margin-bottom: 30px;
+   background-color: #fff;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+
+a{
+   text-decoration: none;
+   color: #4B5945;
+}
+
+.author{
+    color: 91AC8F;
+    text-align: right;
+}
+

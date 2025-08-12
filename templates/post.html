@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <article class="post">
+        <h2>{{ post.title }}</h2>
+        <div class="meta">
+            By {{ post.username }} on {{ post.date }}
+        </div>
+        <div class="content">{{ post.content }}</div>
+
+        {% if current_user.is_authenticated and post.author_id == current_user.id %}
+            <div class="actions">
+                <form method="POST" action="{{ url_for('delete_post', post_id=post.id) }}">
+                    <button type="submit" class="delete">Delete Post</button>
+                </form>
+            </div>
+        {% endif %}
+    </article>
+
+    <section class="comments">
+        <h3>Comments</h3>
+
+        {% if current_user.is_authenticated %}
+            <form method="POST" action="{{ url_for('add_comment', post_id=post.id) }}" class="comment-form">
+                <textarea name="content" placeholder="Your comment..." required></textarea>
+                <button type="submit">Add Comment</button>
+            </form>
+        {% endif %}
+
+        {% for comment in comments %}
+            <div class="comment">
+                <div class="meta">
+                    {{ comment.username }} on {{ comment.date }}
+                    {% if current_user.is_authenticated and comment.user_id == current_user.id %}
+                        <a href="{{ url_for('edit_post', post_id=post.id) }}" class="btn">Edit</a>
+                        <form method="POST" action="{{ url_for('delete_post', post_id=post.id) }}" style="display: inline;">
+                            <button type="submit" class="btn danger">Delete</button>
+                        </form>
+                        <a href="{{ url_for('index', post_id=post.id) }}" class="btn">Back</a>
+                    {% endif %}
+                </div>
+                <p>{{ comment.content }}</p>
+            </div>
+        {% endfor %}
+    </section>
+</body>
+</html>

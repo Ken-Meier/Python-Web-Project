@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comments</title>
+      <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="comments">
+    <h3>Comments ({{ comments|length }})</h3>
+
+    {% if current_user.is_authenticated %}
+    <form method="POST" action="{{ url_for('add_post_comment', post_id=post.id) }}">
+        <textarea name="content" placeholder="Write your comment..." required></textarea>
+        <button type="submit" class="btn">Add Comment</button>
+    </form>
+    {% endif %}
+
+    <div class="comment-list">
+        {% for comment in comments %}
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">{{ comment.username }}</span>
+                <span class="comment-date">{{ comment.date }}</span>
+
+                {% if current_user.is_authenticated and comment.user_id == current_user.id %}
+                <form method="POST" action="{{ url_for('delete_comment', comment_id=comment.id) }}" class="delete-comment">
+                    <button type="submit" class="btn delete">Delete</button>
+                </form>
+                {% endif %}
+            </div>
+            <div class="comment-content">
+                {{ comment.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
