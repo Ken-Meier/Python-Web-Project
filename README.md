@@ -55,3 +55,6 @@ http://127.0.0.1:5000
 
 - HTML5, CSS3 — Frontend styling
 
+## 🔮 Future Improvements
+
+- Rework broken comments
